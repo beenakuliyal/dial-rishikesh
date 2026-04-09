@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #004d4d;
+  --color-primary-dark: #003333;
+  --color-secondary: #ff8c00;
+  --color-accent: #e67e00;
+  --color-neutral-bg: #f3f4f6;
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #003333;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.teal-gradient {
+  background: linear-gradient(135deg, #004d4d 0%, #003333 100%);
+}
+
